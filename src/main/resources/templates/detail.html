@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<a href="/list">List People</a> -
+<a href="/add">Add a Person</a>
+<hr />
+<p th:inline="text">Detail Record of [[${person.lastName}]], [[${person.firstName}]]</p>
+</body>
+</html>
